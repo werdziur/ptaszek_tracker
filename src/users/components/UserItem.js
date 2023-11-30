@@ -5,18 +5,19 @@ import UsersList from './UsersList';
 
 const UserItem = props => {
 	return (
-		<li className='card'>
-			<div className='user-item'>
-				<div className='image'>
-					<img className='user-item__image' src={props.image} alt={props.name} />
+		<li className='user-item'>
+			<div className='user-item__container'>
+				<div className='user-item__image'>
+					<img className='user-item__image--img' src={props.image} alt={props.name} />
 				</div>
-				<div className='user-item__textbox'>
-					<div className='user-item__textbox--main name'>
-						<h2 className='user-item__text name'>{props.name}</h2>
+
+				<div className='user-item__text'>
+					<div className='user-item__name'>
+						<h2 className='user-item__name--text'>{props.name}</h2>
 					</div>
 
-					<div className='user-item__textbox--main'>
-						<h2 className='user-item__text birds'>
+					<div className='user-item__birds'>
+						<h2 className='user-item__birds--text'>
 							{props.birdsCount} {props.birdsCount === 1 ? 'Bird' : 'Birds'}
 						</h2>
 					</div>
