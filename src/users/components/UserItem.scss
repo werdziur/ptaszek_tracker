@@ -1,6 +1,7 @@
 .user-item {
 	display: flex;
 	justify-content: center;
+	margin-top: 5em;
 
 	&__container {
 		display: flex;
@@ -16,6 +17,13 @@
 		padding: 1em;
 		height: 350px;
 		width: 700px;
+		text-decoration: none;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #dde0ab;
+			transition: 0.5s;
+		}
 	}
 
 	&__image {

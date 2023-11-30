@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './UserItem.scss';
 import UsersList from './UsersList';
@@ -6,7 +7,7 @@ import UsersList from './UsersList';
 const UserItem = props => {
 	return (
 		<li className='user-item'>
-			<div className='user-item__container'>
+			<Link className='user-item__container' to={`/${props.id}/places`}>
 				<div className='user-item__image'>
 					<img className='user-item__image--img' src={props.image} alt={props.name} />
 				</div>
@@ -22,7 +23,7 @@ const UserItem = props => {
 						</h2>
 					</div>
 				</div>
-			</div>
+			</Link>
 		</li>
 	);
 };
