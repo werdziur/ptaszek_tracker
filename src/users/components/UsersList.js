@@ -6,7 +6,7 @@ import UserItem from './UserItem';
 const UsersList = props => {
 	if (props.items.length === 0) {
 		return (
-			<div>
+			<div className='user-item'>
 				<h2>No users found</h2>
 			</div>
 		);
