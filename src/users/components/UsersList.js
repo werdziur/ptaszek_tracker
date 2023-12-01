@@ -6,8 +6,10 @@ import UserItem from './UserItem';
 const UsersList = props => {
 	if (props.items.length === 0) {
 		return (
-			<div className='user-item'>
-				<h2>No users found</h2>
+			<div className='user-list'>
+				<div className='user-item'>
+					<h2>No users found</h2>
+				</div>
 			</div>
 		);
 	}
