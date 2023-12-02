@@ -1,26 +1,5 @@
 .user-item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 5em;
-	box-shadow: 0 15px 30px 1px grey;
-	background: white;
-	text-align: center;
-	font-weight: 300px;
-	font-size: 14px;
-	border-radius: 5px;
-	overflow: hidden;
-	margin: 3px;
-
-	padding: 1em;
-	height: 150px;
-	width: 280px;
-
-	&:hover {
-		cursor: pointer;
-		background-color: #dde0ab;
-		transition: 0.5s;
-	}
+	font-size: 12px;
 }
 
 .user-list {
@@ -33,22 +12,16 @@
 
 @media (min-width: 576px) {
 	.user-item {
-		height: 200px;
-		width: 380px;
-		box-shadow: 0 12px 22px 1px grey;
+		font-size: 15px;
 	}
-
 	.user-list {
 		margin-top: 60px;
 	}
 }
 
 @media (min-width: 768px) {
-	@media (min-width: 576px) {
-		.user-item {
-			height: 270px;
-			width: 500px;
-		}
+	.user-item {
+		font-size: 18px;
 	}
 	.user-list {
 		margin-top: 80px;
@@ -57,12 +30,8 @@
 
 @media (min-width: 1200px) {
 	.user-item {
-		margin-top: 5em;
-		height: 350px;
-		width: 700px;
-		box-shadow: 0 15px 30px 1px grey;
+		font-size: 20px;
 	}
-
 	.user-list {
 		margin-top: 100px;
 	}
