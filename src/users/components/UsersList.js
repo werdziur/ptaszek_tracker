@@ -1,15 +1,20 @@
 import React from 'react';
 
 import './UsersList.scss';
+import Card from '../../shared/components/UIElements/Card';
 import UserItem from './UserItem';
 
 const UsersList = props => {
 	if (props.items.length === 0) {
 		return (
 			<div className='user-list'>
-				<div className='user-item'>
-					<h2>No users found</h2>
-				</div>
+				<Card className='user-item'>
+					<div>
+						<div>
+							<h2>No users found</h2>
+						</div>
+					</div>
+				</Card>
 			</div>
 		);
 	}
