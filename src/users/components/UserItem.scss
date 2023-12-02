@@ -17,6 +17,7 @@
 	&__container {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		text-align: center;
 		font-weight: 300px;
 		border-radius: 5px;
@@ -32,6 +33,7 @@
 		justify-content: center;
 		align-items: center;
 		width: 50%;
+		height: 97.06px;
 		overflow: hidden;
 		box-shadow: 0 10px 20px 1px grey;
 		border-radius: 50%;
@@ -42,7 +44,7 @@
 			align-items: center;
 			border-radius: 50%;
 			width: 100%;
-			height: 100%;
+			height: 97.06px;
 		}
 	}
 
@@ -88,6 +90,13 @@
 		&__image {
 			box-shadow: 0 10px 20px 1px grey;
 			margin: 1em;
+			width: 130px;
+			height: 130px;
+
+			&--img {
+				width: 130px;
+				height: 130px;
+			}
 		}
 
 		&__text {
@@ -109,24 +118,28 @@
 }
 
 @media (min-width: 768px) {
-	@media (min-width: 576px) {
-		.user-item {
+	.user-item {
+		height: 270px;
+		width: 500px;
+
+		&__container {
+			padding: 1.2em;
 			height: 270px;
 			width: 500px;
+		}
 
-			&__container {
-				padding: 1.2em;
-				height: 270px;
-				width: 500px;
+		&__image {
+			margin: 1.5em;
+			width: 170px;
+			height: 170px;
+			&--img {
+				width: 170px;
+				height: 170px;
 			}
+		}
 
-			&__image {
-				margin: 1.5em;
-			}
-
-			&__text {
-				font-size: 1.7em;
-			}
+		&__text {
+			font-size: 1.9em;
 		}
 	}
 }
@@ -147,10 +160,16 @@
 		&__image {
 			box-shadow: 0 15px 30px 1px grey;
 			margin: 1em;
+			width: 250px;
+			height: 250px;
+			&--img {
+				width: 250px;
+				height: 250px;
+			}
 		}
 
 		&__text {
-			font-size: 2em;
+			font-size: 2.5em;
 			padding: 5px;
 			margin: 10px;
 		}
