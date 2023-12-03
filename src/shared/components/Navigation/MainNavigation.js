@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './PtaszekLogo.png';
 import MainHeader from './MainHeader';
 import './MainNavigation.scss';
+import NavLinks from './NavLinks';
 
 const MainNavigation = props => {
 	return (
@@ -21,15 +22,7 @@ const MainNavigation = props => {
 					/>
 				</div>
 				<div className='navigation__items'>
-					{/* <a href='#mylist' className='navigation__item navigation__item--list'>
-						MY LIST
-					</a>
-					<a href='#allbirds' className='navigation__item'>
-						BIRD CATALOG
-					</a>
-					<a href='#contact' className='navigation__item'>
-						CONTACT
-					</a> */}
+					<NavLinks />
 				</div>
 			</nav>
 		</MainHeader>
