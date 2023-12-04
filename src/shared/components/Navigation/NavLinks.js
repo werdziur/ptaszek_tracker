@@ -6,14 +6,20 @@ const NavLinks = props => {
 	return (
 		<ul className='navigation-list'>
 			<li className='navigation-list__item'>
-				<NavLink to='#mylist'>MY LIST</NavLink>
+				<NavLink to='/u1/birds'>MY LIST</NavLink>
 			</li>
 			<li className='navigation-list__item'>
-				<NavLink to='#allbirds'>BIRD CATALOG</NavLink>
+				<NavLink to='/birdcatalog'>BIRD CATALOG</NavLink>
 			</li>
 			<li className='navigation-list__item'>
-				<NavLink to='#contact'>CONTACT</NavLink>
+				<NavLink to='/contact'>CONTACT</NavLink>
 			</li>
+			{/* <li className='navigation-list__item'>
+				<NavLink to='/users'>USERS</NavLink>
+			</li> */}
+			{/* <li className='navigation-list__item'>
+				<NavLink to='/auth'>AUTHENTICATE</NavLink>
+			</li> */}
 		</ul>
 	);
 };
