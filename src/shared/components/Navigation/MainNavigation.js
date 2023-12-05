@@ -7,7 +7,7 @@ import './MainNavigation.scss';
 import NavLinks from './NavLinks';
 
 const MainNavigation = props => {
-	const [toggle, setToggle] = useState(true);
+	const [toggle, setToggle] = useState(false);
 
 	const handleClick = () => {
 		setToggle(!toggle);
@@ -40,7 +40,7 @@ const MainNavigation = props => {
 							alt='logo showing a bird and name of the app which is ptaszek tracker'
 						/>
 					</div>
-					<div className='navigation__items'>
+					<div className='navigation__items header-nav'>
 						<NavLinks />
 					</div>
 				</nav>
