@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import logo from './PtaszekLogo.png';
 import MainHeader from './MainHeader';
 import Slider from './Slider';
@@ -6,19 +7,30 @@ import './MainNavigation.scss';
 import NavLinks from './NavLinks';
 
 const MainNavigation = props => {
+	const [toggle, setToggle] = useState(false);
+
+	const handleClick = () => {
+		setToggle(!toggle);
+	};
+
 	return (
 		<React.Fragment>
-			<Slider>
-				<nav className='navigation-slider'>
-					<NavLinks />
-				</nav>
-			</Slider>
+			{toggle ? (
+				<Slider>
+					<nav className='navigation-slider'>
+						<NavLinks />
+					</nav>
+				</Slider>
+			) : (
+				<></>
+			)}
+
 			<MainHeader>
-				<div className='burger-button'>
+				<nav className='burger-button' onClick={handleClick}>
 					<div className='burger-button__container'>
 						<div className='burger-button__bars'></div>
 					</div>
-				</div>
+				</nav>
 
 				<nav className='navigation'>
 					<div className='navigation__logo'>
@@ -28,7 +40,7 @@ const MainNavigation = props => {
 							alt='logo showing a bird and name of the app which is ptaszek tracker'
 						/>
 					</div>
-					<div className='navigation__items'>
+					<div className='navigation__items header-nav'>
 						<NavLinks />
 					</div>
 				</nav>
