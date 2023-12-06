@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import logo from './PtaszekLogo.png';
 import MainHeader from './MainHeader';
 import Slider from './Slider';
+import Overlay from '../UIElements/Overlay';
 import './MainNavigation.scss';
 import NavLinks from './NavLinks';
 
@@ -13,8 +14,13 @@ const MainNavigation = props => {
 		setToggle(!toggle);
 	};
 
+	const closeSlider = () => {
+		setToggle(false);
+	};
+
 	return (
 		<React.Fragment>
+			{toggle && <Overlay onClick={closeSlider} />}
 			{toggle ? (
 				<Slider>
 					<nav className='navigation-slider'>
