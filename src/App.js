@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 
 import Users from './users/pages/Users';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
-// import Birds from './birds/pages/Birds';
+import Birds from './birds/pages/Birds';
 // import Map from './map/pages/Map';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
 			<Routes>
 				{/* <Route path='/' element={<Map />} /> */}
 				<Route path='/users' element={<Users />} />
-				{/* <Route path='/birds' element={<Birds />} /> */}
+				<Route path='/birds' element={<Birds />} />
 				<Route path='*' element={<Navigate to='/' replace />} />
 			</Routes>
 		</Router>
