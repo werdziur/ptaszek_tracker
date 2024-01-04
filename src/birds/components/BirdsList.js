@@ -7,8 +7,8 @@ import BirdItem from './BirdItem';
 const BirdsList = props => {
 	if (props.items.length === 0) {
 		return (
-			<div className='bird-list center'>
-				<Card>
+			<div className='birds-list center'>
+				<Card className='bird-item'>
 					<h2>No birds found. Maybe create one?</h2>
 				</Card>
 			</div>
