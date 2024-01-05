@@ -7,18 +7,18 @@ import BirdsList from './BirdsList';
 
 const BirdItem = props => {
 	return (
-		<Card className='birds-item'>
-			<Link to={`/${props.id}/places`}>
-				<div className='bird-item__image'>
-					<img className='bird-item__image--img' src={props.image} alt={props.name} />
-				</div>
+		<Card className='bird-item'>
+			{/* <Link to={`/${props.id}/places`}> */}
+			<div className='bird-item__image'>
+				<img className='bird-item__image--img' src={props.image} alt={props.name} />
+			</div>
 
-				<div className='bird-item__text'>
-					<div className='bird-item__name'>
-						<h2 className='bird-item__name--text'>{props.name}</h2>
-					</div>
+			<div className='bird-item__text'>
+				<div className='bird-item__name'>
+					<h2 className='bird-item__name--text'>{props.name}</h2>
 				</div>
-			</Link>
+			</div>
+			{/* </Link> */}
 		</Card>
 	);
 };

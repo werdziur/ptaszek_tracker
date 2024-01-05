@@ -1,0 +1,38 @@
+.bird-item {
+	font-size: 12px;
+}
+
+.birds-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+	margin-top: 40px;
+}
+
+@media (min-width: 576px) {
+	.bird-item {
+		font-size: 15px;
+	}
+	.birds-list {
+		margin-top: 60px;
+	}
+}
+
+@media (min-width: 768px) {
+	.bird-item {
+		font-size: 18px;
+	}
+	.birds-list {
+		margin-top: 80px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.bird-item {
+		font-size: 20px;
+	}
+	.birds-list {
+		margin-top: 100px;
+	}
+}
