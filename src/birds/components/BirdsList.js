@@ -9,7 +9,7 @@ const BirdsList = props => {
 		return (
 			<div className='birds-list center'>
 				<Card className='bird-item'>
-					<h2>No birds found. Maybe create one?</h2>
+					<h2>No birds found. Try again.</h2>
 				</Card>
 			</div>
 		);

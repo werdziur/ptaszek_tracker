@@ -1,0 +1,38 @@
+.observation-item {
+	font-size: 12px;
+}
+
+.observation-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+	margin-top: 40px;
+}
+
+@media (min-width: 576px) {
+	.observation-item {
+		font-size: 15px;
+	}
+	.observation-list {
+		margin-top: 60px;
+	}
+}
+
+@media (min-width: 768px) {
+	observation-item {
+		font-size: 18px;
+	}
+	.observation-list {
+		margin-top: 80px;
+	}
+}
+
+@media (min-width: 1200px) {
+	observation-item {
+		font-size: 20px;
+	}
+	.observation-list {
+		margin-top: 100px;
+	}
+}

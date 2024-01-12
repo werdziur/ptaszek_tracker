@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Users from './users/pages/Users';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import Birds from './birds/pages/Birds';
+import Observations from './observations/pages/UserObservations';
 // import Map from './map/pages/Map';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 				{/* <Route path='/' element={<Map />} /> */}
 				<Route path='/users' element={<Users />} />
 				<Route path='/birds' element={<Birds />} />
+				<Route path='/userid/observations' element={<Observations />} />
 				<Route path='*' element={<Navigate to='/' replace />} />
 			</Routes>
 		</Router>
