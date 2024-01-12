@@ -8,7 +8,7 @@ import UsersList from './UsersList';
 const UserItem = props => {
 	return (
 		<Card className='user-item'>
-			<Link to={`/${props.id}/places`}>
+			<Link to={`/${props.id}/observations`}>
 				<div className='user-item__image'>
 					<img className='user-item__image--img' src={props.image} alt={props.name} />
 				</div>
