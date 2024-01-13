@@ -8,22 +8,29 @@ import ObservationsList from './ObservationsList';
 const ObservationItem = props => {
 	return (
 		<Card className='observation-item'>
-			{/* <Link to={`/${props.id}/places`}> */}
-			<div className='observation-item__image'>
-				<img className='observation-item__image--img' src={props.image} alt={props.name} />
-			</div>
+			<div className='observation-container'>
+				<div className='observation-item__image'>
+					<img className='observation-item__image--img' src={props.image} alt={props.name} />
+				</div>
 
-			<div className='observation-item__text'>
-				<div className='observation-item__name'>
-					<h2 className='observation-item__name--text'>{props.name}</h2>
+				<div className='observation-item__text'>
+					<div className='observation-item__name'>
+						<h2 className='observation-item__name--text'>{props.name}</h2>
+						<h2 className='observation-item__name--date'>
+							<span>Observation added on:</span> {props.date}
+						</h2>
+					</div>
 				</div>
 			</div>
+
 			<div className='observation-item__actions'>
+				<Link to={`/birds/${props.birdId}`}>
+					<button>SEE MORE</button>
+				</Link>
 				<button>VIEW ON MAP</button>
 				<button>EDIT</button>
 				<button>DELETE</button>
 			</div>
-			{/* </Link> */}
 		</Card>
 	);
 };

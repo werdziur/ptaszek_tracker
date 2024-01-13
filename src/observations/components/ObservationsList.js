@@ -22,6 +22,8 @@ const ObservationsList = props => {
 					id={observ.id}
 					image={observ.image}
 					name={observ.name}
+					date={observ.date}
+					description={observ.description}
 					creatorId={observ.creator}
 					coordinates={observ.location}
 				/>
