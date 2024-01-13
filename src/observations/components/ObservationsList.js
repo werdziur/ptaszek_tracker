@@ -17,7 +17,16 @@ const ObservationsList = props => {
 	return (
 		<div className='observation-list'>
 			{props.items.map(observ => (
-				<ObservationItem key={observ.id} id={observ.id} image={observ.image} name={observ.name} user={observ.user} />
+				<ObservationItem
+					key={observ.id}
+					id={observ.id}
+					image={observ.image}
+					name={observ.name}
+					date={observ.date}
+					description={observ.description}
+					creatorId={observ.creator}
+					coordinates={observ.location}
+				/>
 			))}
 		</div>
 	);
