@@ -1,41 +1,40 @@
 import React from 'react';
-
+import { useParams } from 'react-router-dom';
 import BirdsList from '../components/BirdsList';
 
-const Birds = props => {
+const Bird = props => {
 	const BIRDS = [
 		{
-			id: 'w1',
 			name: 'Kos',
 			birdId: 'b1',
 			image: 'https://cdn.pixabay.com/photo/2020/05/27/16/56/robin-5228041_960_720.jpg',
 		},
 		{
-			id: 'w2',
 			name: 'Ptak',
 			birdId: 'b2',
 			image: 'https://cdn.pixabay.com/photo/2020/05/27/16/56/robin-5228041_960_720.jpg',
 		},
 		{
-			id: 'w3',
 			name: 'Kukułka',
 			birdId: 'b3',
 			image: 'https://cdn.pixabay.com/photo/2020/05/27/16/56/robin-5228041_960_720.jpg',
 		},
 		{
-			id: 'w4',
 			name: 'Gołąb',
 			birdId: 'b4',
 			image: 'https://cdn.pixabay.com/photo/2020/05/27/16/56/robin-5228041_960_720.jpg',
 		},
 		{
-			id: 'w5',
-			name: 'Strzyżyk',
+			name: 'Kukułka',
 			birdId: 'b3',
 			image: 'https://cdn.pixabay.com/photo/2020/05/27/16/56/robin-5228041_960_720.jpg',
 		},
 	];
-	return <BirdsList items={BIRDS} />;
+
+	const birdId = useParams().birdId;
+	const filteredBird = BIRDS.filter(observation => observation.birdId === birdId);
+
+	return <BirdsList items={filteredBird} />;
 };
 
-export default Birds;
+export default Bird;

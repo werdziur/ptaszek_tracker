@@ -3,8 +3,6 @@ import React from 'react';
 import UsersList from '../components/UsersList';
 
 const Users = () => {
-	//dummy content, later will will fetch from express
-
 	const USERS = [
 		{
 			id: 'c1',
