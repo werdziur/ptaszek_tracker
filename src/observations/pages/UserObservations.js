@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import ObservationsList from '../components/ObservationsList';
 
@@ -29,7 +30,7 @@ const Observations = props => {
 			},
 		},
 		{
-			id: 'w1',
+			id: 'w3',
 			name: 'Kukułka',
 			birdId: 'b3',
 			date: new Date().toJSON().slice(0, 10),
@@ -41,7 +42,7 @@ const Observations = props => {
 			},
 		},
 		{
-			id: 'w1',
+			id: 'w4',
 			name: 'Gołąb',
 			birdId: 'b4',
 			date: new Date().toJSON().slice(0, 10),
@@ -53,7 +54,7 @@ const Observations = props => {
 			},
 		},
 		{
-			id: 'Strzyżyk',
+			id: 'w5',
 			name: 'Kukułka',
 			birdId: 'b3',
 			date: new Date().toJSON().slice(0, 10),
@@ -65,7 +66,10 @@ const Observations = props => {
 			},
 		},
 	];
-	return <ObservationsList items={OBSERVATIONS} />;
+
+	const userId = useParams().userId;
+	const filteredObservations = OBSERVATIONS.filter(observation => observation.creator === userId);
+	return <ObservationsList items={filteredObservations} />;
 };
 
 export default Observations;

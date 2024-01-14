@@ -4,6 +4,7 @@ import Card from '../../shared/components/UIElements/Card';
 
 import './ObservationItem.scss';
 import ObservationsList from './ObservationsList';
+import ButtonSeeMore from './ButtonSeeMore';
 
 const ObservationItem = props => {
 	return (
@@ -25,7 +26,7 @@ const ObservationItem = props => {
 
 			<div className='observation-item__actions'>
 				<Link to={`/birds/${props.birdId}`}>
-					<button>SEE MORE</button>
+					<ButtonSeeMore></ButtonSeeMore>
 				</Link>
 				<button>VIEW ON MAP</button>
 				<button>EDIT</button>

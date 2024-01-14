@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Card from '../../shared/components/UIElements/Card';
 import './ObservationsList.scss';
 import ObservationItem from './ObservationItem';
@@ -26,6 +25,7 @@ const ObservationsList = props => {
 					description={observ.description}
 					creatorId={observ.creator}
 					coordinates={observ.location}
+					birdId={observ.birdId}
 				/>
 			))}
 		</div>

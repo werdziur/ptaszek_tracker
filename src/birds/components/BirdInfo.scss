@@ -1,0 +1,38 @@
+.user-item {
+	font-size: 12px;
+}
+
+.user-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+	margin-top: 40px;
+}
+
+@media (min-width: 576px) {
+	.user-item {
+		font-size: 15px;
+	}
+	.user-list {
+		margin-top: 60px;
+	}
+}
+
+@media (min-width: 768px) {
+	.user-item {
+		font-size: 18px;
+	}
+	.user-list {
+		margin-top: 80px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.user-item {
+		font-size: 20px;
+	}
+	.user-list {
+		margin-top: 100px;
+	}
+}
