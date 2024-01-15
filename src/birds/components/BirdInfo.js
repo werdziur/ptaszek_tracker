@@ -1,26 +1,26 @@
 import React from 'react';
 
-import './BirdInfo';
-import Card from '../../shared/components/UIElements/Card';
+import './BirdInfo.scss';
+import BirdInfoCard from '../../shared/components/UIElements/BirdInfoCard';
 import BirdInfoItem from './BirdInfoItem';
 
 const BirdInfo = props => {
 	if (props.items.length === 0) {
 		return (
-			<div className='user-list'>
-				<Card className='user-item'>
+			<div className='bird-container'>
+				<BirdInfoCard className='bird-item'>
 					<div>
 						<div>
-							<h2>No users found</h2>
+							<h2>No birds found</h2>
 						</div>
 					</div>
-				</Card>
+				</BirdInfoCard>
 			</div>
 		);
 	}
 
 	return (
-		<div className='user-list'>
+		<div className='bird-container'>
 			{props.items.map(user => (
 				<BirdInfoItem key={user.id} id={user.id} image={user.image} name={user.name} description={user.description} />
 			))}
