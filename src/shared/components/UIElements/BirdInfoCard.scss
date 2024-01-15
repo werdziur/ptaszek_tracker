@@ -1,9 +1,9 @@
-.card {
+.bird-component {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 2em;
-	height: 150px;
+	height: 500px;
 	width: 280px;
 	box-shadow: 0 10px 20px 1px grey;
 	background: white;
@@ -19,25 +19,22 @@
 }
 
 @media (min-width: 576px) {
-	.card {
-		padding: 1em;
-		height: 200px;
+	.bird-component {
+		height: 500px;
 		width: 380px;
 	}
 }
 
 @media (min-width: 768px) {
-	.card {
-		padding: 1.2em;
-		height: 270px;
+	.bird-component {
+		height: 700px;
 		width: 500px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.card {
-		padding: 1em;
-		height: 350px;
+	.bird-component {
+		height: 900px;
 		width: 700px;
 	}
 }
