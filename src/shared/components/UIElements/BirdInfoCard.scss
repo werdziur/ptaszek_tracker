@@ -6,21 +6,15 @@
 	height: 500px;
 	width: 280px;
 	box-shadow: 0 10px 20px 1px grey;
-	background: white;
+	background-color: #dde0ab;
 	border-radius: 5px;
 	overflow: hidden;
 	font-size: 14px;
-
-	&:hover {
-		cursor: pointer;
-		background-color: #dde0ab;
-		transition: 0.5s;
-	}
 }
 
 @media (min-width: 576px) {
 	.bird-component {
-		height: 500px;
+		height: 600px;
 		width: 380px;
 	}
 }
