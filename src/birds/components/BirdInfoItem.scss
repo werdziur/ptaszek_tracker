@@ -149,16 +149,25 @@ img {
 
 @media (min-width: 576px) {
 	.bird-card {
-		height: 480px;
+		height: 580px;
 		width: 400px;
 
 		&__item {
-			height: 500px;
+			height: 600px;
 			width: 380px;
 
 			&--image {
 				height: 250px;
 				width: 380px;
+			}
+
+			&--description {
+				font-size: 1em;
+				line-height: 20px;
+			}
+
+			&--name {
+				font-size: 2.3em;
 			}
 		}
 	}
@@ -190,7 +199,7 @@ img {
 			}
 
 			&--name {
-				font-size: 2.5em;
+				font-size: 2.7em;
 			}
 		}
 	}
