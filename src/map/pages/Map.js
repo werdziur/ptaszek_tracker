@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ShowMap from '../components/loadMap';
 
-const Map = () => {
+const Map = props => {
 	const [currLocation, setCurrLocation] = useState({});
 
 	useEffect(() => {
