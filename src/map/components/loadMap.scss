@@ -1,0 +1,14 @@
+#map {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	height: 100vh;
+	width: 100vw;
+}
+
+//size of the map container
+.leaflet-container {
+	height: 100vh;
+	margin-top: 100px;
+}
