@@ -22,12 +22,14 @@ const ShowMap = props => {
 
 	return (
 		<div className='map'>
-			<MapContainer center={currLocation.coords} zoom={13}>
-				<TileLayer
-					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-					url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
-				/>
-			</MapContainer>
+			{currLocation.latitude && currLocation.longitude && (
+				<MapContainer center={[currLocation.latitude, currLocation.longitude]} zoom={13}>
+					<TileLayer
+						attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+						url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+					/>
+				</MapContainer>
+			)}
 		</div>
 	);
 };
